@@ -48,3 +48,4 @@ payload:
 ```
 ## 获取CDN
 <https://cdn.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/>
+> 刷新CDN: <https://purge.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/>
