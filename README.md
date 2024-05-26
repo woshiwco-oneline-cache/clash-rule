@@ -46,4 +46,5 @@ payload:
   - IP-CIDR,192.168.0.0/16,DIRECT
   - MATCH,PROXY
 ```
-
+## 获取CDN
+<https://cdn.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/>
