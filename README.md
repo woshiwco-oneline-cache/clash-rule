@@ -31,11 +31,11 @@ online clash rule cache
     4. Rule Providers配置
         rule-providers:
             [provider_name]:
-            type: http
-            behavior: classical
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-            path: ./ruleset/[provider_name].yaml
-            interval: 864000
+                type: http
+                behavior: classical
+                url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+                path: ./ruleset/[provider_name].yaml
+                interval: 864000
         
 ## rule 示例
 ```yml
