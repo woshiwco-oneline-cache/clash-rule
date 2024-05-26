@@ -33,7 +33,7 @@ online clash rule cache
             [provider_name]:
                 type: http
                 behavior: classical
-                url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+                url: "https://cdn.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/bt-direct-rules"
                 path: ./ruleset/[provider_name].yaml
                 interval: 864000
         
