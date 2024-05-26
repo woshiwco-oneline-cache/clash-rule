@@ -17,7 +17,7 @@ online clash rule cache
         . PROCESS-NAME：基于进程名称匹配
         . PROCESS-PATH：基于进程路径匹配
         . IP-SET：基于 IP 集合匹配
-        . RULE-SET：基于三方规则集（Provider）匹配
+        . RULE-SET：基于三方规则集（rule-providers）匹配
         . SCRIPT：基于脚本匹配z`
         . MATCH：自定义匹配（通常与其他工具或脚本结合使用）
     2. 动作类型
@@ -28,6 +28,14 @@ online clash rule cache
         . 顺序规则：匹配规则按照顺序进行匹配，一旦找到匹配的规则，就会执行相应的动作，并且不再检查后续规则
         . 排除条件：可以使用!符号来排除某些条件
         . 通配符和正则表达式：在某些条件下，可以使用通配符（如*）或正则表达式进行更复杂的匹配
+    4. Rule Providers配置
+        rule-providers:
+            [provider_name]:
+            type: http
+            behavior: classical
+            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+            path: ./ruleset/[provider_name].yaml
+            interval: 864000
         
 ## rule 示例
 ```yml
