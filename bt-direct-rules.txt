@@ -1,2 +1,2 @@
 payload:
-  - youtube.com
+  - DOMAIN-SUFFIX,youtube.com
