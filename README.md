@@ -52,13 +52,13 @@ payload:
 . MIXIN
 ```yaml
 mixin:
-    rules:
-        - RULE-SET,lan-direct,DIRECT
-        - MATCH,PROXY
-    rule-providers:
-        lan-direct:
-            type: http
-            behavior: classical
-            url: "https://cdn.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/bt-direct-rules"
-            interval: 864000
+  rules:
+    - RULE-SET,landirect,DIRECT
+    - MATCH,Proxies
+  rule-providers:
+    landirect:
+      type: http
+      behavior: classical
+      url: "https://cdn.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/bt-direct-rules.txt"
+      interval: 864000
 ```
