@@ -19,7 +19,7 @@ online clash rule cache
         . IP-SET：基于 IP 集合匹配
         . RULE-SET：基于三方规则集（rule-providers）匹配
         . SCRIPT：基于脚本匹配z`
-        . MATCH：自定义匹配（通常与其他工具或脚本结合使用）
+        . MATCH：自定义匹配（通常与其他工具或脚本结合使用，rule-providers不支持）
     2. 动作类型
         . REJECT：拒绝请求，不发送流量
         . DIRECT：直接发送流量，不使用代理
@@ -34,7 +34,6 @@ online clash rule cache
                 type: http
                 behavior: classical
                 url: "https://cdn.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/bt-direct-rules"
-                path: ./ruleset/[provider_name].yaml
                 interval: 864000
         
 ## rule 示例
@@ -46,6 +45,20 @@ payload:
   - IP-CIDR,192.168.0.0/16,DIRECT
   - MATCH,PROXY
 ```
-## 获取CDN
-<https://cdn.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/>
-> 刷新CDN: <https://purge.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/>
+## 其他
+. CDN
+> CDN地址：<https://cdn.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/><br>刷新CDN: <https://purge.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/>
+
+. MIXIN
+```yaml
+mixin:
+    rules:
+        - RULE-SET,lan-direct,DIRECT
+        - MATCH,PROXY
+    rule-providers:
+        lan-direct:
+            type: http
+            behavior: classical
+            url: "https://cdn.jsdelivr.net/gh/woshiwco-oneline-cache/clash-rule@release/bt-direct-rules"
+            interval: 864000
+```
