@@ -1,2 +1,2 @@
 payload:
-  - DOMAIN,devv.ai
+  - DOMAIN-SUFFIX,devv.ai
