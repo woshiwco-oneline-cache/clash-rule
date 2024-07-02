@@ -1,3 +1,2 @@
 payload:
-# https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt
-#  - MATCH,DIRECT
+  - DOMAIN,devv.ai
