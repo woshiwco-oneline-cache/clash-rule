@@ -1,2 +1,2 @@
 payload:
-  - DOMAIN-SUFFIX：health-100.cn
+  - DOMAIN-SUFFIX,health-100.cn
