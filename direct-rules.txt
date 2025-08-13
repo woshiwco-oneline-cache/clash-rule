@@ -1,4 +1,4 @@
 payload:
   - DOMAIN-SUFFIX,health-100.cn
-  - IP-CIDR,20.0.0.200/32,DIRECT,no-resolve
-  - IP-CIDR,20.0.0.30/32,DIRECT,no-resolve
+  - IP-CIDR,20.0.0.200/32
+  - IP-CIDR,20.0.0.30/32
