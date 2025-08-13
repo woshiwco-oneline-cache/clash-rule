@@ -40,11 +40,10 @@ online clash rule cache1
 ## rule 示例
 ```yml
 payload:
-  - DOMAIN-SUFFIX,example.com,PROXY
-  - DOMAIN-KEYWORD,example,PROXY
-  - GEOIP,CN,DIRECT
-  - IP-CIDR,192.168.0.0/16,DIRECT
-  - MATCH,PROXY
+  - DOMAIN-SUFFIX,example.com
+  - DOMAIN-KEYWORD,example
+  - GEOIP,CN
+  - IP-CIDR,192.168.0.0/16
 ```
 ## 其他
 . CDN
