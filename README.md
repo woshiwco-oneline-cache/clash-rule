@@ -1,6 +1,6 @@
 ## clash-rule
 
-online clash rule cache
+online clash rule cache 1
 
 ## clash rule 语法规则
 > 通常以YAML格式编写，每条规则由条件列表、值、动作组成，条件列表用逗号分隔
